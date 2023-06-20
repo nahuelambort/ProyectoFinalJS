@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Pok&eacute;dex</title>
+</head>
+<body>
+    <div class="pokedex-container">
+        <div class="pokedex__header">
+            <div class="pokedex__header-title">
+                <h1 style="font-size:50px;">POK&Eacute;DEX</h1>
+            </div>
+            <div class="pokedex__header-search">
+                <input type="text" id="buscador" placeholder="Nombre o ID">
+                <button class="search" id="search">Buscar</button>
+                <button class="poke_random" id="poke_random">Pok&eacute;mon Aleatorio</button>
+                <button class="poke_todos" id="poke_todos">Todos los Pok&eacute;mon</button>
+                <button id="cambio_modo">Cambiar Modo</button>
+            </div>
+        </div>
+
+        <div class="pokedex__pokemon-content" id="pokemonContent">
+        </div>
+
+        <div class="pokedex__pokebox">
+            <h2>CAJA DE POK&Eacute;MON</h2>
+            <div class="pokedex__pokebox-content" id="pokeBoxContent">
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

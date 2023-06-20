@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #a1a1a1;
+  background: -webkit-linear-gradient(to right, #a1a1a1, #cabebe);
+  background: linear-gradient(to right, #a1a1a1, #cabebe);
+}
+
+.dark-mode {
+  background: rgb(27, 27, 27);
+}
+
+.pokedex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 18px;
+  margin-left:250px;
+}
+
+.pokedex__header {
+  background: rgb(220, 57, 57);
+  min-height: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 1000px;
+  border: solid;
+  border-radius:10px;
+}
+
+.pokedex__header-title {
+  color: yellow;
+  margin-top: 40px;
+  margin: 25px;
+}
+
+.pokedex__header-search {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pokedex__header-search input {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border: solid;
+  outline: none;
+  padding: 5px;
+  max-width: 150px;
+}
+
+.pokedex__header-search button {
+  margin: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid;
+  outline: none;
+  padding: 5px;
+  max-width: 150px;
+  background-color: white;
+  cursor:pointer;
+}
+
+button {
+  cursor:pointer;
+}
+
+.pokedex__pokemon-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-count: 2;
+  column-gap: 20px;
+  width: 1000px;
+  margin-bottom: 20px;
+}
+
+.pokemon {
+  background-color: #eee;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.pokemon .info {
+  margin-top: 20px;
+}
+
+.pokemon .number {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+}
+
+.pokemon .name {
+  margin: 15px 0 7px;
+  letter-spacing: 1px;
+}
+
+.pokedex__pokebox {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+  position: fixed;
+  margin-right:250px;
+  top: 10px;
+  right: 10px;
+}
+
+.pokedex__pokebox h2 {
+  color: rgb(192, 31, 31);
+  margin-bottom: 10px;
+}
+
+.pokedex__pokemon-content button{
+  margin: 10px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid;
+  outline: none;
+  padding: 5px;
+  max-width: 130px;
+  background-color: white;
+}
+
+.pokedex__pokebox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+
+.pokedex__pokebox-content button {
+  margin: auto;
+  height: 30px;
+  border-radius: 5px;
+  border: solid;
+  outline: none;
+  padding: 5px;
+  max-width: 130px;
+  background-color: white;
+  position: absolute;
+  left: 60%;
+  margin-top: 30px;
+}
+
+.pokemon-image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-right: 50px; /* Añadimos un margen inferior para separar el botón */
+}
+
+
+#pokemonImage {
+  width: 150px;
+  height: 150px;
+
+}
+
+.pokemon.Normal {
+  background-color: rgba(168, 168, 120, 0.8);
+}
+
+.pokemon.Lucha {
+  background-color: rgba(192, 48, 40, 0.8);
+}
+
+.pokemon.Volador {
+  background-color: rgba(168, 144, 240, 0.8);
+}
+
+.pokemon.Veneno {
+  background-color: rgba(160, 64, 160, 0.8);
+}
+
+.pokemon.Tierra {
+  background-color: rgba(224, 192, 104, 0.8);
+}
+
+.pokemon.Roca {
+  background-color: rgba(184, 160, 56, 0.8);
+}
+
+.pokemon.Bicho {
+  background-color: rgba(168, 184, 32, 0.8);
+}
+
+.pokemon.Fantasma {
+  background-color: rgba(112, 88, 152, 0.8);
+}
+
+.pokemon.Acero {
+  background-color: rgba(184, 184, 208, 0.8);
+}
+
+.pokemon.Fuego {
+  background-color: rgba(255, 140, 0, 0.8);
+}
+
+.pokemon.Agua {
+  background-color: rgba(104, 144, 240, 0.8);
+}
+
+.pokemon.Planta {
+  background-color: rgba(120, 200, 80, 0.8);
+}
+
+.pokemon.Eléctrico {
+  background-color: rgba(255, 220, 0, 0.8);
+}
+
+.pokemon.Psíquico {
+  background-color: rgba(248, 88, 136, 0.8);
+}
+
+.pokemon.Hielo {
+  background-color: rgba(152, 216, 216, 0.8);
+}
+
+.pokemon.Dragón {
+  background-color: rgba(112, 56, 248, 0.8);
+}
+
+.pokemon.Siniestro {
+  background-color: rgba(112, 88, 72, 0.8);
+}
+
+.pokemon.Hada {
+  background-color: rgba(238, 153, 172, 0.8);
+}
